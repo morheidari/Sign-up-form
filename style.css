@@ -1,7 +1,159 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+@font-face {
+    font-family: odin;
+    src: url(Norse-Bold\ \(1\).otf);
+}
 .container{
     display: flex;
+    
 }
 
 .left{
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(bgimg.jpg);
+    background-size: 33vw 100vh;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    position: relative;
+    top: -20vh;
+    background-color: rgba(0, 0, 0, 0.5);    
+}
+
+img{
+    margin: 6px 1px;
+    padding: 0;
+    width: 12vh;
+    height: 16vh;
+    opacity: n;
+}
+
+.logo-box>div{
+    font-family: odin;
+    font-size: 12vh;
+    color: white;
+}
+
+.license{
+    position: absolute;
+    bottom: 3vh;
+    color: white;
+}
+
+.license>a{
+    color: white;
+}
+
+.right{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: rgb(247, 247, 247);
+}
+
+.first{
+    padding-top: calc(70px + 5%);
+    padding-left: 5%;
+    font-weight: 600;
+}
+
+p{
+    max-width: 52ch;
+}
+
+.form{
+    background-color: white;
+    box-shadow: 0px 3px 3px rgb(221, 221, 221);
+    padding: max(40px, 2%) 5%;
+}
+
+legend{
+    font-size: large;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.input-row{
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: small;
+    font-weight: 600;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+input{
+    height: 20px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 1px 2px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.third{
+    padding-left: 5%;
+    font-size: medium;
+}
+
+button{
+    background-color: #596D48;
+    width: 150px;
+    height:35px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 0px 2px 1px rgb(126, 126, 126);
+}
+
+
+
+input:invalid{
+    border-color: red;
+}
+
+
+.third>div>a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
+
+button:active{
+    box-shadow: none;
 }
